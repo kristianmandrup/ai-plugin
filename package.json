@@ -1,0 +1,40 @@
+{
+  "name": "ai-plugin",
+  "description": "Plugin manager for Aurelia",
+  "version": "0.1.0",
+  "homepage": "https://github.com/kristianmandrup/ai-plugin",
+  "author": {
+    "name": "Kristian Mandrup",
+    "email": "kmandrup@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kristianmandrup/ai-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kristianmandrup/ai-plugin/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/kristianmandrup/ai-plugin/blob/master/LICENSE"
+    }
+  ],
+  "main": "lib/ai-plugin",
+  "bin": {
+      "ai-plugin": "bin/ai-plugin.js"
+  },
+  "engines": {
+      "node": ">= 0.10.36",
+      "npm": ">=1.4.28"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "~2.1.2",
+    "mocha": "~2.2.1"
+  },
+  "keywords": []
+}
