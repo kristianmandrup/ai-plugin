@@ -22,16 +22,19 @@
   ],
   "main": "lib/ai-plugin",
   "bin": {
-      "ai-plugin": "bin/ai-plugin.js"
+    "ai-plugin": "bin/ai-plugin.js"
   },
   "engines": {
-      "node": ">= 0.10.36",
-      "npm": ">=1.4.28"
+    "node": ">= 0.10.36",
+    "npm": ">=1.4.28"
   },
   "scripts": {
     "test": "make test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "ai-core": "^0.1.0",
+    "lodash": "^4.15.0"
+  },
   "devDependencies": {
     "chai": "~2.1.2",
     "mocha": "~2.2.1"
