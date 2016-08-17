@@ -2,29 +2,46 @@
 
 > Plugin manager for Aurelia
 
+Will likely be integrated with [monterey](https://github.com/monterey-framework/monterey) at some point in the future.
+For our vision, please see the [moneterey book](https://aurelia-ui-toolkits.gitbooks.io/monterey-overview/content/)
+
 ## Getting Started
 Install the module with: `npm install ai-plugin`
 
 ```javascript
-var ai-plugin = require('ai-plugin');
-ai-plugin.awesome(); // "hello "
+const plugin = require('ai-plugin');
 ```
 
 ## Documentation
 
-#### .awesome(name)
+Plugins are installed from `registry/plugins.json`:
 
-**Parameter**: `name`
-**Type**: `String`
-**Example**: `Livia`
-
-The 'awesome' method is responsible for showing a name.
-
-How to use this method
-
-```javascript
-ai-plugin.awesome('livia'); // "hello livia"
+```json
+{
+  "animator-velocity": "aurelia-animator-velocity",
+  "fetch": "aurelia-fetch-client",
+  "dialog": "aurelia-dialog",
+  "i18n": "aurelia-i18n",
+  // ...
+ }
 ```
+
+You are encouraged to register your own favorite aurelia plugins in this registry. The key is the alias (short name).
+
+Depending on your (registered) preference, the plugin will be installed via `npm` or `jspm` package manager. The plugin will also be configured.
+Each plugin can (optionally) include a custom `post-install` configuration step which will be run after basic installation. Same goes for `uninstall` with a custom `post-uninstall` config step.
+
+## Structure
+
+- `programs` - CLI commands
+- `commands` - commands
+
+## CLI
+
+- `create <name> [mountPath]` - create named plugin (via skeleton plugin or generator?)
+- `install <name>` - install named plugin
+- `uninstall <name>` - uninstall named plugin
+- `list` - list registered plugins
 
 ## Contributing
 
