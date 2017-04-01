@@ -1,5 +1,7 @@
 # Ai-plugin [![Build Status](https://secure.travis-ci.org/kristianmandrup/ai-plugin.png?branch=master)](http://travis-ci.org/kristianmandrup/ai-plugin) [![NPM version](https://badge-me.herokuapp.com/api/npm/ai-plugin.png)](http://badges.enytc.com/for/npm/ai-plugin)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/kristianmandrup/ai-plugin.svg)](https://greenkeeper.io/)
+
 > Plugin manager for Aurelia
 
 Will likely be integrated with [monterey](https://github.com/monterey-framework/monterey) at some point in the future.
